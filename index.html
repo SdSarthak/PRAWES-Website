@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prawes | Homepage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="logo-container">
+          <img src="Logo.jpg" alt="Prawes Logo" class="logo-image" />
+          <h1 class="organization-name">PRAWES</h1>
+        </div>
+        <div class="contact-info">
+          <span>Contact: 7898770372</span>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://imgs.search.brave.com/6SKwdhOsY-K2XV-Wdui5fvvdN153woKTv_iFEAMVc2k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9mYWNlYm9v/ay1pY29uLTUxMng1/MTItc2ViNTQyanUu/cG5n"
+                target="_blank"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://imgs.search.brave.com/jPuRIXzRnDLTy-kDRsyQiBszPHNgqfRcdxGOnmZdVow/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC90d2l0dGVy/LWljb24tNTEyeDQx/Ny10NTljcDZ4NC5w/bmc"
+                alt="Twitter"
+                target="_blank"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/prawes-param-pujya-rakshak-aadinath-welfare-and-education-society/"
+              target="_blank"
+              ><img
+                src="https://imgs.search.brave.com/8qGRjDl2sS6AWNV1vpNN67iESiRGYsXe852xdnL6pF4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc"
+                alt="LinkedIn"
+            /></a>
+            <a href="https://www.youtube.com/@sansthaprawes6426" target="_blank"
+              ><img
+                src="https://imgs.search.brave.com/w3VxGwtdJGQ4mtch9lGRsMF61iVR268cRwTiec6t3oo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8zOTM4LzM5Mzgw/MjYucG5nP3NlbXQ9/YWlzX2h5YnJpZA"
+                alt="YouTube"
+            /></a>
+            <a
+              href="https://www.instagram.com/no.bhiksha?igsh=YzljYTk1ODg3Zg=="
+              target="_blank"
+              ><img
+                src="https://imgs.search.brave.com/zEtSgpLGRMAVkRPSecDRbH8mUEqfYo72VTBDO0HwyMw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtMDAuaWNvbmR1/Y2suY29tL2Fzc2V0/cy4wMC9pbnN0YWdy/YW0taWNvbi01MTJ4/NTEyLWdnaDh4M2Nu/LnBuZw"
+                alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="sub-header">
+        <h6>Param Pujya Rakshak Aadinath Welfare and Education Society</h6>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="get_involved.html">Get Involved</a></li>
+          <li><a href="news.html">News & Events</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a href="donate.html" class="donate-button">Donate</a>
+      </nav>
+    </header>
+
+    <section class="image-slider">
+      <button class="arrow left" onclick="prevImage()">&#10094;</button>
+      <div class="slider">
+        <img src="slide1.jpg" alt="Image 1" class="active" />
+        <img src="slide2.jpg" alt="Image 2" />
+        <img src="slide3.jpg" alt="Image 3" />
+      </div>
+      <button class="arrow right" onclick="nextImage()">&#10095;</button>
+    </section>
+
+    <main>
+      <section class="intro">
+        <div class="about">
+          <h2>About Prawes</h2>
+          <p>
+            Prawes is dedicated to uplifting communities through sustainable
+            initiatives and empowering individuals. Our mission is to create a
+            positive impact in the lives of those we serve, fostering hope and
+            resilience.
+          </p>
+        </div>
+        <div class="statistics">
+          <h2>Our Impact Statistics</h2>
+          <canvas
+            id="impactChart"
+            style="
+              display: block;
+              box-sizing: border-box;
+              height: 75px;
+              width: 150px;
+            "
+            width="1878"
+            height="939"
+          ></canvas>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Prawes. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+    </footer>
+
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slider img");
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? "block" : "none";
+        });
+      }
+
+      function nextImage() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      function prevImage() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+      }
+
+      showSlide(currentSlide);
+
+      const ctx = document.getElementById("impactChart").getContext("2d");
+      const impactChart = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan 2020",
+            "May 2020",
+            "Dec 2020",
+            "Jan 2021",
+            "Dec 2021",
+            "Jan 2022",
+            "Dec 2022",
+            "Jan 2023",
+            "Dec 2023",
+            "Oct 2024",
+          ],
+          datasets: [
+            {
+              label: "Number of People Helped",
+              data: [100, 175, 213, 255, 295, 385, 405, 485, 535, 655],
+              borderColor: "rgba(75, 192, 192, 1)",
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: { display: true, text: "Number of People Helped" },
+            },
+            x: { title: { display: true, text: "Time" } },
+          },
+        },
+      });
+
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,es,fr,de,zh-CN",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+  </body>
+</html>
